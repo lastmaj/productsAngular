@@ -4,20 +4,19 @@ import { ProductService } from './products/product.service';
 
 @Component({
   selector: 'pm-root', 
-  providers: [ProductService],
   template: `
   <div>
-	<nav class='navbar navbar-default'>
-		<div class='container-fluid'>
-			<a class='navbar-brand'>{{pageTitle}}</a>
-			<ul class='nav navbar-nav'>
-				<li> <a [routerLink] = "['/welcome']">Home</a></li>
-				<li> <a [routerLink] = "['/products']">Product List</a></li>
-			</ul>
-		</div>
-	</nav>
-</div>
-<router-outlet></router-outlet>
+		<nav class='navbar navbar-default'>
+			<div class='container-fluid'>
+				<a class='navbar-brand'>{{pageTitle}}</a>
+					<ul class='nav navbar-nav'>
+						<li> <a [routerLink] = "['/welcome']">Home</a></li>
+						<li> <a [routerLink] = "['/products']">Product List</a></li>
+					</ul>
+			</div>
+		</nav>
+	</div>
+	<router-outlet></router-outlet>
       `
 })
 
